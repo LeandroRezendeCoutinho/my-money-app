@@ -11,6 +11,7 @@ import TabHeader from '../common/tab/tabHeader'
 import TabContent from '../common/tab/tabContent'
 import { selectTab } from "../common/tab/tabActions"
 import { showTabs } from "../common/tab/tabActions";
+import List from "./billingCycleList";
 
 class BillingCycle extends Component {
   componentWillMount() {
@@ -31,6 +32,7 @@ class BillingCycle extends Component {
               <TabHeader label='Delete' icon='trash-o' target='tabDelete' />
             </TabsHeader>
             <TabsContent>
+              <List></List>
               <TabContent id='tabList'><h1>List</h1></TabContent>
               <TabContent id='tabCreate'><h1>Create</h1></TabContent>
               <TabContent id='tabUpdate'><h1>Update</h1></TabContent>
